@@ -1,3 +1,4 @@
+<!-- unused -->
 <template>
 	<div>
 		<form @submit="addTodo">
@@ -33,13 +34,15 @@
 
 <style scoped>
 form {
-	display: flex;
+	display: block;
+}
+form input {
+	display: inherit;
+	margin: auto;
 }
 input[type="text"] {
-	flex: 10;
 	padding: 5px;
 }
 input[type="submit"] {
-	flex: 2;
 }
 </style>
